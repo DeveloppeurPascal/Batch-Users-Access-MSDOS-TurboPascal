@@ -1,0 +1,115 @@
+Logiciel: OSPASWRD.
+
+Auteur: Patrick Pr‚martin.
+
+*******************************************************************************
+
+     Pour installer les programmes de cet utilitaire de protection, tapez
+     INSTALL sur la ligne de commande du DOS. Suivez ensuite les indications
+     qui s'afficheront … l'‚cran. Lors de l'installation, un utilisateur du
+     nom de QSECOFR (ayant QSECOFR pour mot de passe) sera cr‚‚, il a accŠs …
+     toutes les commandes. Nous vous recommandons de changer son mot de passe
+     pour plus de s‚curit‚...
+
+     Cette documentation explique comment utiliser les commandes de protection,
+     veuillez la lire int‚gralement (il serait pr‚f‚rable que vous
+     l'imprimiez).
+
+*******************************************************************************
+* Commandes accessibles … tous les utilisateurs.                              *
+*******************************************************************************
+
+     CHGPASWD
+
+     Permet de modifier votre mot de passe.
+
+*******************************************************************************
+
+     LOGOUT
+
+     Signale au PC que vous d‚sirez arr‚ter de travailler, il affichera donc
+     l'‚cran d'ouverture qui permet aux utilisateurs de se connecter.
+
+     Vous devez syst‚matiquement saisir cette commande avant d'arr‚ter votre
+     micro-ordinateur, ou avant de laisser le PC … un autre utilisateur.
+
+*******************************************************************************
+
+     QUI
+
+     Affiche le nom de l'utilisateur connect‚.
+
+*******************************************************************************
+* Commandes accessibles … tous, mais r‚serv‚es … l'administrateur (QSECOFR)   *
+*******************************************************************************
+
+     EDT_LOG
+
+     Chaque commande de cet utilitaire de protection g‚nŠre des messages dans
+     un fichier d'historique. Il peut parfois ˆtre utile (ou int‚ressant) de
+     savoir ce qui s'est pass‚ sur le PC pendant une pŠriode donn‚e.
+
+     EDT_LOG vous permet d'imprimer cet historique.
+
+*******************************************************************************
+* Commandes et fonctionnalit‚s r‚serv‚es … l'administrateur (QSECOFR)         *
+*******************************************************************************
+
+     CHGPASWD
+
+     En tant qu'administrateur, vous pouvez modifier les profils d'autres
+     utilisateurs, il vous suffit de sp‚cifier leur nom sur la ligne de
+     commande.
+
+     Tapez 'CHGPASWD TOUTOU' pour pouvoir modifier le mot de passe de TOUTOU,
+     vous n'aurez pas … sp‚cifier son ancien mot de passe. Ca peut servir lors
+     d'une perte de m‚moire...
+
+*******************************************************************************
+
+     CRTUSER
+
+     Vous permet de cr‚er des utilisateurs. Le mot de passe d'un nouvel
+     utilisateur et son nom sont identiques, il est recommand‚ de les faire
+     modifier au plus t“t par leur propri‚taire.
+
+     Pour cr‚er les utilisateurs RODOLF, MILOU et RONRON, il vous suffit de
+     taper 'CRTUSER RODOLF MILOU RONRON' sur la ligne de commande du DOS.
+
+     La version actuelle n'autorise que 1000 utilisateurs, si vous avez besoin
+     d'en avoir plus, n'h‚sitez pas … nous contacter.
+
+*******************************************************************************
+
+     DLTUSER
+
+     Vous permet de supprimer un utilisateur, faites quand mˆme attention … qui
+     vous d‚sirez supprimer...
+
+     Il suffit de taper 'DTLUSER RONRON MILOU' pour supprimer les utilisateurs
+     RONRON et MILOU.
+
+*******************************************************************************
+
+     INSTALL
+
+     Permet l'installation de cet utilitaire, elle ne doit ˆtre ex‚cut‚e que du
+     lecteur A: afin d'installer les outils n‚cessaires sur le disque C:
+
+     Il est inutile (et dangereux) de lancer cette commande une fois l'
+     utilitaire install‚, elle d‚truirait tous les profils, et vous empŠcherait
+     d'acc‚der au PC.
+
+*******************************************************************************
+
+     LOGIN
+
+     Cette commande affiche l'‚cran d'ouverture, vous devrez y saisir un nom
+     d'utilisateur, ainsi que son mot de passe.
+
+     Elle est automatiquement install‚e dans le fichier AUTOEXEC.BAT afin d'
+     emp‚cher l'accŠs au DOS lors du d‚marrage de votre ordinateur.
+
+     Vous ne devez jamais appeler cette commande … la main !!!
+
+*******************************************************************************
